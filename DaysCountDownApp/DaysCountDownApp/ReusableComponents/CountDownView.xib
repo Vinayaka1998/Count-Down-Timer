@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CountDownView" customModule="DaysCountDownApp" customModuleProvider="target">
+            <connections>
+                <outlet property="countDownLabel" destination="xxb-nm-iqE" id="212-pS-hbh"/>
+                <outlet property="countDownView" destination="TQE-JO-Ci2" id="FS7-Ja-5Gh"/>
+                <outlet property="mainView" destination="iN0-l3-epB" id="Z5O-CE-cyv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="81" height="56"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQE-JO-Ci2">
+                    <rect key="frame" x="0.0" y="0.0" width="81" height="22"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxb-nm-iqE">
+                            <rect key="frame" x="40.666666666666664" y="11" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="xxb-nm-iqE" firstAttribute="centerY" secondItem="TQE-JO-Ci2" secondAttribute="centerY" id="E11-hX-3TQ"/>
+                        <constraint firstItem="xxb-nm-iqE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TQE-JO-Ci2" secondAttribute="leading" constant="10" id="Ggm-Il-syq"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xxb-nm-iqE" secondAttribute="trailing" constant="10" id="RGN-Ny-sSd"/>
+                        <constraint firstItem="xxb-nm-iqE" firstAttribute="centerX" secondItem="TQE-JO-Ci2" secondAttribute="centerX" id="YUp-pA-Kop"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="TQE-JO-Ci2" secondAttribute="bottom" id="E2v-dw-9fF"/>
+                <constraint firstItem="TQE-JO-Ci2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Ufi-xP-iog"/>
+                <constraint firstItem="TQE-JO-Ci2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eRS-yB-uyT"/>
+                <constraint firstItem="TQE-JO-Ci2" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="gWj-2Y-BRb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-237.40458015267174" y="21.83098591549296"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="DaysCountDownApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_image" translatesAutoresizingMaskIntoConstraints="NO" id="q2Q-qV-CtS">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="rVS-x3-Y2m">
+                                <rect key="frame" x="30.666666666666657" y="393.66666666666669" width="332" height="65"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w4f-3u-IBm" customClass="CountDownView" customModule="DaysCountDownApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="65" id="Tf9-2w-lkc"/>
+                                            <constraint firstAttribute="height" constant="65" id="e3R-lQ-BJn"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zeq-hC-wFr" customClass="CountDownView" customModule="DaysCountDownApp" customModuleProvider="target">
+                                        <rect key="frame" x="89" y="0.0" width="65" height="65"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="Fvr-ed-Zye"/>
+                                            <constraint firstAttribute="width" constant="65" id="cxQ-QT-w0T"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G80-8G-OQd" customClass="CountDownView" customModule="DaysCountDownApp" customModuleProvider="target">
+                                        <rect key="frame" x="178" y="0.0" width="65" height="65"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="65" id="YlS-JT-bgw"/>
+                                            <constraint firstAttribute="height" constant="65" id="met-dC-EGw"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="71m-SK-4Vx" customClass="CountDownView" customModule="DaysCountDownApp" customModuleProvider="target">
+                                        <rect key="frame" x="267" y="0.0" width="65" height="65"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="65" id="HId-Fg-jSD"/>
+                                            <constraint firstAttribute="height" constant="65" id="tIb-lB-6H7"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WE'RE LAUNCHING SOON" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8A-ta-WOi">
+                                <rect key="frame" x="35" y="237.66666666666663" width="323" height="86"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DAYS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EuZ-6G-ZVZ">
+                                <rect key="frame" x="46.333333333333329" y="488.66666666666669" width="33.333333333333329" height="15.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MINITUES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGO-pW-MKC">
+                                <rect key="frame" x="210.33333333333334" y="488.66666666666669" width="61.333333333333343" height="15.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SECONDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQI-rb-nLp">
+                                <rect key="frame" x="299" y="488.66666666666669" width="62.333333333333314" height="15.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOURS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBA-Ev-QxV">
+                                <rect key="frame" x="129.33333333333334" y="488.66666666666669" width="45.666666666666657" height="15.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YGO-pW-MKC" firstAttribute="centerY" secondItem="lQI-rb-nLp" secondAttribute="centerY" id="2g8-g3-0fz"/>
+                            <constraint firstItem="kBA-Ev-QxV" firstAttribute="centerX" secondItem="zeq-hC-wFr" secondAttribute="centerX" id="2gL-hf-t2Z"/>
+                            <constraint firstItem="q2Q-qV-CtS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9GE-B9-n3L"/>
+                            <constraint firstItem="rVS-x3-Y2m" firstAttribute="top" secondItem="L8A-ta-WOi" secondAttribute="bottom" constant="70" id="9p7-q9-10R"/>
+                            <constraint firstItem="rVS-x3-Y2m" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ARv-WR-fje"/>
+                            <constraint firstItem="kBA-Ev-QxV" firstAttribute="top" secondItem="rVS-x3-Y2m" secondAttribute="bottom" constant="30" id="H8f-HM-Clb"/>
+                            <constraint firstItem="lQI-rb-nLp" firstAttribute="centerX" secondItem="71m-SK-4Vx" secondAttribute="centerX" id="Pdh-Y4-aw3"/>
+                            <constraint firstItem="rVS-x3-Y2m" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Pe2-lw-gwY"/>
+                            <constraint firstItem="rVS-x3-Y2m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RNa-LP-Sg9"/>
+                            <constraint firstItem="q2Q-qV-CtS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UKn-t7-zHn"/>
+                            <constraint firstItem="kBA-Ev-QxV" firstAttribute="centerY" secondItem="EuZ-6G-ZVZ" secondAttribute="centerY" id="VOy-K3-u6l"/>
+                            <constraint firstAttribute="bottom" secondItem="q2Q-qV-CtS" secondAttribute="bottom" id="VTE-HJ-lFg"/>
+                            <constraint firstItem="L8A-ta-WOi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WBU-7W-fWE"/>
+                            <constraint firstItem="YGO-pW-MKC" firstAttribute="top" secondItem="rVS-x3-Y2m" secondAttribute="bottom" constant="30" id="ajf-zm-C9O"/>
+                            <constraint firstItem="L8A-ta-WOi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="e6X-ac-zwD"/>
+                            <constraint firstItem="lQI-rb-nLp" firstAttribute="top" secondItem="rVS-x3-Y2m" secondAttribute="bottom" constant="30" id="f2c-LD-Bjz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="L8A-ta-WOi" secondAttribute="trailing" constant="35" id="gKB-Dh-64d"/>
+                            <constraint firstItem="EuZ-6G-ZVZ" firstAttribute="top" secondItem="rVS-x3-Y2m" secondAttribute="bottom" constant="30" id="jmz-95-jdi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rVS-x3-Y2m" secondAttribute="trailing" constant="20" id="nG0-d8-Oj6"/>
+                            <constraint firstItem="YGO-pW-MKC" firstAttribute="centerX" secondItem="G80-8G-OQd" secondAttribute="centerX" id="sKA-Cx-2hm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q2Q-qV-CtS" secondAttribute="trailing" id="sdC-dO-4Et"/>
+                            <constraint firstItem="EuZ-6G-ZVZ" firstAttribute="centerX" secondItem="w4f-3u-IBm" secondAttribute="centerX" id="uZS-zy-R7P"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="daysView" destination="w4f-3u-IBm" id="mCQ-Tx-i03"/>
+                        <outlet property="hoursView" destination="zeq-hC-wFr" id="sKD-GO-ltI"/>
+                        <outlet property="minutesView" destination="G80-8G-OQd" id="lms-g1-Nmp"/>
+                        <outlet property="secondsView" destination="71m-SK-4Vx" id="TAC-gR-vsd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.76335877862595414" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background_image" width="409" height="720"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
